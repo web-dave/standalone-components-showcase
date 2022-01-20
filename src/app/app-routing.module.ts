@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./lazy-c/lazy-c.component').then((m) => {
         console.log(m);
-        return m.LazyCComponent;
+        return m.LazyCComponent['module'];
       }),
   },
 ];
